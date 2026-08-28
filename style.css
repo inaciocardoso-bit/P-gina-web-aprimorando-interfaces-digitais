@@ -59,7 +59,7 @@ main {
 article {
     display: flex;
 
-    border: 1px solid var(--cor-primaria);
+    border: 1px solid var(--cor-segundaria);
 
     margin: 16px;
     gap: 16px;
@@ -80,4 +80,14 @@ img {
 
 .artigo-autor {
     font-weight: bold;
+}
+
+.btn-tema-varang {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
 }
