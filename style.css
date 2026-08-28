@@ -1,11 +1,45 @@
+:root {
+    --cor-primaria: #16397E;
+    --cor-segundaria: #158f7c;
+    --cor-fundo: rgb(254, 254, 255);
+    --cor-texto: rgb(2, 17, 44);
+    --cor-contraste: rgb(232, 234, 240);
+    --cor-botao: rgb(222, 230, 243);
+
+    --fonte-texto: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tema-varang {
+    --cor-primaria: #7e0808;
+    --cor-segundaria: #1f0f0f;
+    --cor-fundo: rgb(0, 0, 0);
+    --cor-texto: rgb(220, 223, 228);
+    --cor-contraste: rgb(1, 6, 22);
+    --cor-botao: rgb(2, 9, 20);
+}
+
+.tema-varang a {
+    color: var(--cor-texto);
+}
+
+.tema-varang p {
+    color: var(--cor-texto);
+}
+
+.tema-varang header p a {
+    color: var(--cor-texto);
+}
+
+
 body {
     max-width: 100vw;
+    font-family: var(--fonte-texto);
 }
 
 header {
     font-style: initial;
-    background-color: #16397E;
-    color: #D9FFF9;
+    background-color: var(--cor-primaria);
+    color: var(--cor-contraste);
     margin: 0 auto;
     padding: 16px;
     border: 6px solid cornflowerblue;
@@ -13,8 +47,8 @@ header {
 
 main {
     font-style: italic;
-    background-color: #D9FFF9;
-    color: #16397E;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
     margin: 0 auto;
     padding: 16px;
 
@@ -25,7 +59,7 @@ main {
 article {
     display: flex;
 
-    border: 1px solid #16397E;
+    border: 1px solid var(--cor-primaria);
 
     margin: 16px;
     gap: 16px;
